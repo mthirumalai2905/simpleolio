@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  padding: 0 2rem;         /* left and right gaps */
+  background-color: #ffffff; /* optional: light background for aesthetics */
+  font-family: Arial, sans-serif; /* optional: cleaner font */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ Prevents horizontal scroll */
+  font-family: sans-serif;
+}
+
+.section-divider {
+  border: none;
+  height: 2px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 5rem auto;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.05)
+  );
+  border-radius: 4px;
+}

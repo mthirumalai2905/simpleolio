@@ -1,0 +1,20 @@
+.about-section {
+  width: 100%;
+  max-width: 950px;           /* ✅ Matches your desired width */
+  margin: 200px auto;
+  box-sizing: border-box;     /* ✅ Includes padding inside width */
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.about-description {
+  font-size: 1rem;
+  max-width: 600px;
+}

@@ -1,0 +1,15 @@
+.project-show {
+  max-width: 600px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  color: #111;
+}

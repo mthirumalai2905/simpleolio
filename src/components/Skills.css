@@ -1,0 +1,40 @@
+.skills-section {
+
+  max-width: 600px;
+  margin: -30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-pill {
+    padding: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6d6c6c;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  background-color: rgb(239, 240, 241);
+}
+
+.skill-pill:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
