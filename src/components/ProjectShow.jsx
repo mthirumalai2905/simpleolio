@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectShow.css';
 import ProjectCard from './ProjectCard';
+import { motion } from 'framer-motion';
 
 import imagify from '../assets/imagify.webm';
 import mock from '../assets/mock.webm';
@@ -30,14 +31,45 @@ const projects = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
 const ProjectShow = () => {
   return (
-    <section className="project-show">
-      <h2 className="project-title">Projects</h2>
+    <motion.section
+      className="project-show"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
+      <motion.h2
+        className="project-title"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        Projects
+      </motion.h2>
+
       {projects.map((project, idx) => (
-        <ProjectCard key={idx} {...project} />
+        <motion.div key={idx} variants={itemVariants}>
+          <ProjectCard {...project} />
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 };
 
